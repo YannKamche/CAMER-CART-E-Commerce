@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-roboto;
+    }
+    .link {
+        @apply text-gray-200 hover:text-white transition ease-in;
+    }
+
+}
