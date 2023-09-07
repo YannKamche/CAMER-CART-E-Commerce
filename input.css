@@ -13,5 +13,7 @@
     .link {
         @apply text-gray-200 hover:text-white transition ease-in;
     }
-
+    .dropdown-link {
+        @apply flex items-center px-6 py-3 hover:bg-gray-100 transition-all ease-in hover:opacity-70;
+    }
 }
