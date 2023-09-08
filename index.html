@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,12 @@
 
     <!-- Link to the ICON file -->
     <link rel="icon" href="">
+
+    <!-- Linkt to Swiper Js -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
    
@@ -73,8 +79,8 @@
     <!-- header ends-->
 
     <!-- Navbar starts -->
-    <nav class="bg-secondary">
-        <div class="container flex ">
+    <nav class="bg-secondary sticky top-0 z-30">
+        <div class="container flex">
             <!-- All categories  -->
             <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                 <div class="text-white">
@@ -139,19 +145,63 @@
     <!-- Navbar ends -->
 
     <!-- Banner starts -->
-    <div class="py-36 bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/luxury-living-Banner.jpg');">
-        <div class="container">
-            <h1 class="text-5xl text-secondary font-poppins tracking-wider mb-4 capitalize font-semibold w-1/2">
-                Curate Your Dream Home with our Exclusive Collection
-            </h1>
-            <p class="w-1/2 text-lg text-gray-900">
-                Dive into a world of endless possibilities as you mix and match colors, textures, and styles to curate a space that reflects your unique personality. 
-            </p>
-            <div class="mt-12">
-                <a href="#" class="border-2 border-primary bg-primary text-white px-8 py-3 font-medium shadow-md hover:bg-transparent hover:text-primary text-lg transition ease-in hover:shadow-2xl">Shop Now</a>
+    <div class="swiper">
+
+      <div class="swiper-wrapper">
+          
+          <div class="swiper-slide py-36 bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/banner/living-room-inner-banner.jpg');">
+              <div class="container">
+                  <h1 class="text-5xl text-white font-poppins tracking-wider mb-4 capitalize font-semibold w-1/2">
+                      Curate Your Dream Home with our Exclusive Collection
+                  </h1>
+                  <p class="w-1/2 text-lg text-white">
+                      Dive into a world of endless possibilities as you mix and match colors, textures, and styles to curate a space that reflects your unique personality.
+                  </p>
+                  <div class="mt-12">
+                      <a href="#" class="border-2 border-primary bg-primary text-white px-8 py-3 font-medium shadow-md hover:bg-transparent hover:text-primary text-lg transition ease-in hover:shadow-2xl">Shop Now</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class=" swiper-slide py-36 bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/banner/luxury-living-Banner.jpg');">
+            <div class="container">
+                <h1 class="text-5xl text-secondary font-poppins tracking-wider mb-4 capitalize font-semibold w-1/2">
+                    Unleash Your Home's Potential with Our Stunning Accessories
+                </h1>
+                <p class="w-1/2 text-lg text-gray-900">
+                    Indulge in the timeless charm of our artisanal ceramics, the soft embrace of luxurious throws and cushions, and the warm glow of our meticulously crafted lighting fixtures.</p>
+                <div class="mt-12">
+                    <a href="#" class="border-2 border-primary bg-primary text-white px-8 py-3 font-medium shadow-md hover:bg-transparent hover:text-primary text-lg transition ease-in hover:shadow-2xl">Shop Now</a>
+                </div>
             </div>
         </div>
+
+          <div class="swiper-slide py-40 bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/banner/black-and-white-interior-design-L-shaped-couch-simple-white-shades.jpg');">
+              <div class="container">
+                  <h1 class="text-5xl text-primary font-poppins tracking-wider mb-4 capitalize font-semibold w-1/2">
+                      Create a Personal Haven with Premium Home Accessories
+                  </h1>
+                  <p class="w-1/2 text-lg text-white">
+                      Our commitment to quality ensures that each accessory not only enhances your décor but also stands the test of time.</p>
+                  <div class="mt-12">
+                      <a href="#" class="border-2 border-primary bg-primary text-white px-8 py-3 font-medium shadow-md hover:bg-transparent hover:text-primary text-lg transition ease-in hover:shadow-2xl">Shop Now</a>
+                  </div>
+              </div>
+          </div>
+ 
+      </div>
+            <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
     </div>
     <!-- Banner ends -->
+
+
+
+    <!-- Link to Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Link to Custom Js -->
+    <script src="./script.js"></script>
 </body>
 </html>
