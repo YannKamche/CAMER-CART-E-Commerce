@@ -1,3 +1,4 @@
+/*-----------SWIPER LIBRARY FOR THE BANNER SECTION-----------*/
 const swiper = new Swiper('.swiper', {
     spaceBetween: 20,
     effect: "coverflow",
